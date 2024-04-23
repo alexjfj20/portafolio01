@@ -2,6 +2,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+
 }
 
 :root {
@@ -12,18 +13,33 @@
   --dark2: #050505; 
 }
 
+header {
+  background-color: var(--dark2);
+  position: sticky;
+  top: 0;
+  z-index:30;
+  padding: 5px 0;
+}
+
 
 body {
    font-size: 18px;
    font-family: 'Signika', sans-serif;
    color: var(--segundary);
+}
 
-
+.container {
+  max-width:  1200px;
+  margin: 0 auto;
 }
 
 .navbar {
   display: flex;
   justify-content: flex-end;
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  
  
 }
 
@@ -38,6 +54,14 @@ body {
   text-decoration: none;
   color: white; 
   margin: 20px;
+
+}
+
+.traductor1 {
+display: inline-block;
+padding: 0px 60px;
+margin-top: 5px;
+
 
 }
 
@@ -168,7 +192,10 @@ span {
 
 .contact-icon img {
     width: 40px;
+    height: 40px;
     margin: 0 10px;
+   
+    
 }
 
 
@@ -216,7 +243,7 @@ span {
 /*skills */
 
 section.skills {
-  background-color: var(--dark1);
+  background-color: var(--dark1); 
   
       
 
@@ -229,7 +256,7 @@ section.skills {
    display: grid;
    grid-template-columns: repeat(auto-fit,minmax(250px,auto));
    justify-content: center;
-   gap: 170px;
+   gap: 150px;
    width: 90%;
    margin: 0 auto;
    padding-bottom: 110px;
@@ -253,7 +280,7 @@ section.skills {
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(110px,auto));
   justify-content: center;
-  gap:25px;
+  gap:10px;
 
 
 }
@@ -262,13 +289,579 @@ section.skills {
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(70px,auto));
   justify-content: center;
-  gap:50px;
+  gap: 10px;
+}
+
+/* tooltip*/
+
+.skill h3 {
+  background-color: var(--dark2);
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 0;
+  font-size: 1.1rem;
+  width: 100px;
+  color: var(--primary);
+  opacity: 0;
+  transform: translate(0px, -100px);
+  transition: transform 0.4s ease, opacity 0.4s ease;
+
+}
+
+.knowledge>div:hover h3,
+.tools>div:hover h3 {
+  opacity: 1;
+  transform: translate(0px, -150px);
+
+}
+
+
+/* about*/
+
+.about {
+  background-color: var(--dark2);
+}
+
+
+.about-flex {
+    display: flex;
+    width: 90%;
+    margin: auto ;
+    padding: 50px 0 40px;
+
+}
+
+.about p {
+     font-size: 1.5rem;
+     width: 90%;
+     margin: 0 auto;
+     line-height: 2.5rem;
+     color: var(--secundary-light);
+
+}
+
+.about-info {
+
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+
+.social {
+
+  border-left: var(--secundary-light) 5px solid;
+  padding-left: 50px;
+
+
+}
+
+.social img {
+  width: 60px;
+  margin: 10px;
+  
+     
+
+}
+
+.social img:hover {
+   transform: scale(1.2);
+}
+
+/*footer*/
+
+.footer  {
+  background-color: var(--dark2);
+  text-align: center;
+  color: var(--secundary-light);
+
+}
+
+/* icon-elemnts */
+
+.icon-elemnts {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 25px;
+
+
+}
+
+
+.icon-elemnts a {
+  display: flex; 
+  align-items: center;
+  text-decoration: none;
+  gap: 15px;
+  padding: 10px;
+  margin-top: 20px;
+  
+  
+
+}
+
+
+.icon-elemnts img {
+  width: 70px;
+
+}
+
+.icon-elemnts img:hover {
+  transform: scale(1.2);
+}
+
+.icon-elemnts span:hover {
+  color:  var(--segundary);
+}
+
+/*modal*/
+
+.eins-modal-content {
+  max-width: 700px;
+  background-color: var(--dark1);
+
+}
+
+.eins-modal-preview {
+   max-width: 350px;
+  /*height: 350px;
+  margin: 0 auto;*/
+
+}
+
+.eins-modal-preview img {
+     width: 100%;
+   /*  height: 100%;*/
+     padding: 0 50px 20px 0;
+
+
+
+}
+
+.pw-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(270px,auto));
+
+
+}
+
+.eins-modal-text p {
+   font-size: 0.7rem;
+   
+
+}
+
+.eins-modal-text-2 {
+   padding: 100px 0 10px;
+ /*  width: 90%;
+   margin:0 auto;*/
+
+
+
+}
+
+.eins-modal-text-2  a {
+  color: var(--segundary);
+  margin: 5px;
+
+
+}
+
+.eins-modal-tec img {
+  width: 50px;
+  height: 50px;
+
+}
+
+
+/* Estilos para pantallas más pequeñas (hasta 768px de ancho) */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px; /* Cambiar el tamaño de fuente en pantallas más pequeñas */
+  }
+
+  img {
+    max-width: 100%; 
+    height: auto;
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+}
+  header {
+    padding: 10px 0; /* Ajustar el relleno en la cabecera */
+  }
+
+  .navbar {
+    justify-content: space-between; /* Cambiar el alineamiento de los elementos de la barra de navegación */
+  }
+
+  .navbar a {
+    font-size: 1.2rem; /* Cambiar el tamaño de fuente de los elementos de navegación */
+  }
+
+  .hero img {
+    height: auto; /* Hacer que la imagen del héroe sea responsive */
+  }
+
+  .profile {
+    flex-direction: auto; /* Cambiar la dirección del perfil en dispositivos más pequeños */
+  }
+
+  .square {
+    width: 100%; /* Hacer que el cuadro cuente con el ancho completo en dispositivos más pequeños */
+  }
+
+  
+   /* Agregar más ajustes necesarios para pantallas más pequeñas */
+
+  
+}
+
+
+/*conctac form*/
+
+
+form {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+
+
+}
+
+.form>label>input {
+  background-color: var(--dark2);
+  border-radius: 10px;
+  padding: 10px 60px;
+  color: var(--segundary);
+  outline: none;
+  opacity: .7;
+  width: 100%;
+}
+
+.form>label>textarea {
+  background-color: var(--dark2);
+  border-radius: 10px;
+  padding: 50px;
+  color: var(--segundary);
+  outline: none;
+  opacity: .7;
+  width: 100%;
+}
+
+label {
+
+padding: 5px;
+
+}
+
+.form>button {
+   background-color: var(--primary);
+   color: var(--segundary);
+   border-radius: 10px;
+   padding: 10px;
+
+
+
+}
+
+/* switch*/
+
+#switch1 {
+  background-color: #f8f8f8;
+  position: relative;
+  width: 50px;
+  height: 30px;
+  box-shadow: inset 4px  4px  6px  #cecece,
+              inset -4px  -4px  6px  #fff;
+  border-radius: 25px;
+  cursor: pointer;
+
+}
+
+/* Estilos para el modo claro (estilos predeterminados) */
+body {
+  background-color: #fff;
+  color: #333;
+}
+
+/* Estilos para el modo oscuro */
+.dark-mode  {
+  background-color: #333;
+  color: #fff;
+}
+
+
+/* Estilos para la sección "About" en modo claro */
+.about {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* Estilos para la sección "About" en modo oscuro */
+.dark-mode .about {
+  background-color: var(--dark2);
+  color: #fff;
+}
+
+/* Estilos para la sección "briefcase" en modo claro */
+.briefcase {
+  background-color: #f5f5f5;
+  color: #333;
+
+}
+
+/* Estilos para la sección "briefcase" en modo oscuro */
+.dark-mode .briefcase {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Estilos para la sección "skills" en modo claro */
+
+.skill {
+  background-color: #f5f5f5;
+  color: #333;
+
+}
+
+/* Estilos para la sección "skills" en modo oscuro */
+.dark-mode .skill {
+  background-color: #333;
+  color: #fff;
+}
+
+
+/* Estilos para la sección "skills" en modo claro */
+
+.skills {
+  background-color: #f5f5f5;
+  color: #333;
+
+}
+
+/* Estilos para la sección "skills" en modo oscuro */
+.dark-mode .skills {
+  background-color: #333;
+  color: #fff;
 }
 
 
 
+section.skills {
+  background-color: #f5f5f5;
+  color: #333;
+
+}
+
+/* Estilos para la sección "skills" en modo oscuro */
+.dark-mode section.skills{
+  background-color: #333;
+  color: #fff;
+}
 
 
+/*switchDark active */
+
+.switchDark {
+
+  background-color: #333;
+  display: flex;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.switchDark span {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  display: block;
+  color: #fff;
+  background: none;
+}
+
+/* configuración de la esfera del botón */
+.switchDark::after { 
+  display: block;
+  background: #fffbf5;
+  width: 1.8rem;
+  height: 1.8rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: unset;
+  border-radius: 50%;
+  transition: all .5s ease;
+  box-shadow: 0 0 1.5px rgba(0, 0, 0, .5);
+  content: "";
+}
+
+.switchDark.active {
+  background: #fdd384;
+
+}
+
+.switchDark.active::after {
+  left: unset;
+  right: 0;
+  
+}
+
+
+
+/* botón de traductor de idioma */
+
+
+.en {
+   color: #f3e7e7;
+}
+
+.es {
+   color: #00a1ff;
+}
+
+.check {
+    position: relative;
+    width: 50px;
+    height: 20px;
+}
+
+.check::before {
+   content: '';
+   position: absolute;
+   width: 50px;
+   height: 25px;
+   background: #b6d34d;
+   border-radius: 25px;   
+}
+
+.check::after{
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background: #fff;
+  border-radius: 25px;
+  transition: 0.25s;
+  border:  2px solid #333;
+  box-sizing: border-box;
+}
+
+.check:checked:after {
+    left: 25px;
+    border:  2px solid #00a1ff;
+}
+
+.check:checked:before{
+  background: #00a1ff;
+
+}
+
+
+/* botón de traductor de idioma */
+
+
+
+/*  formulario de    emailjs.com        */
+
+.field {
+  margin-bottom: 10px;
+}
+
+.field label {
+  display: block;
+  font-size: 12px;
+  color: #777;
+}
+
+.field input {
+  display: block;
+  border-radius: 10px;
+  min-width: 250px;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+input[type="submit"] {
+  display: block;
+  border-radius: 10px;
+  padding: 6px 30px;
+  font-size: 14px;
+  background-color: #4460AA;
+  color: #fff;
+  border: none
+}
+
+/* textos de preguntas de perfil       */
+
+.titulo-centrado {
+  text-align: center;
+  font-size: 20px;
+  color: var(--primary); /* Puedes cambiar el código de color a tu preferencia */
+  opacity: .7;
+  
+}
+
+.titulo-pre p {
+  color: #ABB2B9;  
+
+}
+
+
+.titulo-rta p {
+  color: var(--primary);
+  opacity: .7;  
+
+} 
+
+.main-btn-container {
+ padding-top: 200px;
+ text-align: center;
+ 
+
+}
+
+.btn {
+    border-radius: 3px;
+    display: block;
+    width: 200px;
+    padding: 20px 15px;
+    text-decoration: none;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-shadow: 0 1px 0 rgba(12, 14, 14, 0.3);
+    box-shadow: 0 1px 0 rgba(139, 236, 188, 0.3);
+}
+
+.btn-green {
+  color: white;
+  font-size: 25px; 
+  background-color: var(--primary);
+  opacity: .7; 
+}
+
+.btn-green.opacity {
+  opacity: .7;
+}
+
+/* O si deseas aplicar la opacidad solo en hover */
+.btn-green:hover {
+  color: white;
+  background-color: var(--primary);
+  opacity: 1;
+}
+
+/*    */
 
 
 

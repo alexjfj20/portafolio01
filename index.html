@@ -1,138 +1,596 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portafolio</title>
-    <link rel="stylesheet" href="./src/index.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@500&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header>
-      <div class="hero">
-        <div class="navbar">
-          <nav>
-            <ul>
-              <li><a href="#">Inicio</a></li>
-              <li><a href="#">Portafolio</a></li>
-              <li><a href="#">Sobre mi</a></li>
-            </ul>
-          </nav>
-        </div>
-        <img src="./public/img/galaxia2.jpg" alt="" />
-      </div>
-      <div class="profile">
-        <div class="square"></div>
-        <div class="circle-trans"></div>
-        <div class="circle"></div>
-        <div class="profile-img"><img src="" alt="" /></div>
-        <div class="profile-img">
-          <img src="./public/img/Alex-Jerez-SEO.jpg" alt="" />
-        </div>
-        <div class="square-text">ALEXANDER JEREZ FERNANDEZ</div>
-        <div class="square-text-2">
-          <samp>ING. EN SISTEMAS | WEB DEVELOPER</samp>
-        </div>
-        <div class="contact-icon">
-          <a href="https://github.com/alexjfj20"
-            ><img src="./public/img/github.png" alt=""
-          /></a>
-          <a
-            href="https://www.linkedin.com/in/optimizacion-marketing-59532421b/"
-            ><img src="./public/img/linkedin_icon.png" alt=""
-          /></a>
-          <a
-            href="https://www.linkedin.com/in/optimizacion-marketing-59532421b/"
-            ><img src="./public/img/linkedin_icon.png" alt=""
-          /></a>
-        </div>
-        <div class="square-text-3">
-          <a href="#about-me"><span>About me |</span> Sobre Mi</a>
-        </div>
-      </div>
-    </header>
-    <section class="briefcase" id="briefcase">
-      <div class="briefcase-section">
-        <h2><span>Briefcase |</span> Portafolio</h2>
-        <div class="briefcase-grid">
-          <div><a href="https://zippy-madeleine-2b0c2c.netlify.app//" target="_blank"><img src="./public/img/Galletadelafortuna.png" alt="" /></a></div>
-          <div><a href="https://ecommercealexjf.netlify.app/" target="_blank"><img src="./public/img/tienda.png" alt="" /></a></div>
-          <div><a href="https://effervescent-panda-9f3700.netlify.app/" target="_blank"><img src="./public/img/pokemon.png" alt="" /></a></div>
-          <div><a href="https://visionary-palmier-91e2f8.netlify.app/" target="_blank"><img src="./public/img/appclima.png" alt="" /></a></div>
-          <div><a href="https://sensational-unicorn-5aab0e.netlify.app/" target="_blank"><img src="./public/img/RickandMortyapp.png" alt="" /></div>
-          <div><img src="./public/img/portafolio.jpg" alt="" /></div>
-        </div>
-      </div>
-    </section>
+<html lang="es">
 
-    <section class="skills">
-      <div class="skill">
-        <div class="knowledge-part">
-          <h2><span>knowledge |</span> Conocimientos</h2>
-          <div class="knowledge">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/node_modules/eins-modal/dist/css/eins-modal.min.css">
+  <link rel="stylesheet" href="./src/index.css" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  
+
+</head>
+
+
+
+
+  <header>
+    <div class="navbar container">
+      <nav>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#briefcase">Portafolio</a></li>
+          <li><a href="#about-me">Sobre mi</a></li>
+          
+          <li>
             <div>
-              <img src="./public/img/HTML5.png" alt="HTML5" />
-              <h3>HTML</h3>
+              <button class="switchDark active" id="switch">
+              <span><i class='bx bx-sun'></i></span>
+              <span><i class='bx bx-moon'></i></span>  
+                         
             </div>
-            <div>
-              <img src="./public/img/CSS.png" alt="CSS" />
-              <h3>CSS</h3>
-            </div>
-            <div>
-              <img src="./public/img/javascript.png" alt="JavaScript" />
-              <h3>JavaScript</h3>
-            </div>
-            <div>
-              <img src="./public/img/Woo-commerce.png" alt="Woo Commerce" />
-              <h3>Woo Commerce</h3>
-            </div>
-            <div>
-              <img src="./public/img/Optimizacion-SEO-1.png" alt="Optimizacion SEO" />
-              <h3>Optimizacion SEO</h3>
-            </div>
-            <div>
-              <img src="./public/img/Wordpress.png" alt="Wordpress" />
-              <h3>Wordpress</h3>
-            </div>
+            <li>
+             <!-- botón de traductor -->
+              <div class="traductor1">
+               <span class="es">Spanish</span>
+               <input type="checkbox" class="check">
+               <span class="en">English</span>
+               <script src="/src/traduc.js"></script>                  
+              </div>
+             <!-- botón de traductor -->
+            </li>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+  </header>
+
+
+  <section>
+    
+    <div class="hero" id="inicio">
+      <div class="container">
+
+
+        <img class="galaxia" src="./public/img/galaxia2.jpg" alt="" />
+      </div>
+    </div>
+
+    <div class="profile">
+      <div class="square"></div>
+      <div class="circle-trans"></div>
+      <div class="circle"></div>
+      <div class="profile-img"><img src="./public/img/Alex-Jerez-SEO.jpg" alt="" /></div>
+      <div class="square-text">ALEXANDER JEREZ FERNANDEZ</div>
+      <div class="square-text-2"><samp>ING. EN SISTEMAS | WEB DEVELOPER</samp></div>
+
+      <div class="contact-icon">
+        <a href="https://github.com/alexjfj20" target="_blank"><img src="./public/img/github.png" alt="" /></a>
+        <a href="https://www.linkedin.com/in/optimizacion-marketing-59532421b/" target="_blank"><img
+            src="./public/img/linkedin_icon.png" alt="" /></a>
+        <a data-modal-id="mensajes"><img src="./public/img/email1.png"
+            alt="" /></a>
+        <a href="./public/cv/Full stack - Alexander jerez fernandez.pdf" target="_blank" download="cv-alexander-jerez-f"><img src="./public/img/descargar-4.png" alt="" /></a>    
+      </div>
+      <div class="square-text-3"><a href="#about-me"><span>About me |</span> Sobre Mi</a></div>
+    </div>
+
+  </section>
+  <section class="about" id="about-me">
+    <div class="about-flex  container">
+      <div class="about-info container">
+        <p>Innovador Desarrollador Full Stack con expertise en JavaScript, HTML, CSS,
+           React JS y Node JS. Especializado en tiendas virtuales con WordPress y
+           WooCommerce, y destacado en estrategias de marketing digital. Experto
+           en SEO con certificación "Python TOTAL - Programador Avanzado en 16 días".
+           Listo para impulsar tu equipo hacia el éxito tecnológico.</p>
+        <br>
+        <div id="main-btn-container">
+        <a href="./public/cv/Full stack - Alexander jerez fernandez.pdf" class="btn btn-green"  target="_blank" download="cv-alexander-jerez-f">Descargar cv</a>    
+       </div>
+      </div>      
+  </section>
+  <section class="briefcase" id="briefcase">
+    <div class="briefcase-section container">
+      <h2><span>Briefcase |</span> Portafolio</h2>
+      <div class="briefcase-grid">
+        <div><a data-modal-id="Galletadelafortuna"><img src="./public/img/Galletadelafortuna.png" alt="" /></a></div>
+        <div><a data-modal-id="tienda"><img src="./public/img/tienda.png" alt="" /></a></div>
+        <div><a data-modal-id="pokemon"><img src="./public/img/pokemon.png" alt="" /></a></div>
+        <div><a data-modal-id="fondomusical"><img src="./public/img/fondo-musical-2.png" alt="" /></a></div>
+        <div><a data-modal-id="RickandMortyapp"><img src="./public/img/RickandMortyapp.png" alt="" /></a></div>
+        <div><a data-modal-id="appclima"><img src="./public/img/appclima.png" alt="" /></a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="skills">
+    <div class="skill container">
+      <div class="knowledge-part">
+        <h2><span>knowledge |</span> Conocimientos</h2>
+        <div class="knowledge">
+          <div>
+            <img src="./public/img/HTML5.png" alt="HTML5" />
+            <h3>HTML5</h3>
+          </div>
+          <div>
+            <img src="./public/img/CSS.png" alt="CSS" />
+            <h3>CSS</h3>
+          </div>
+          <div>
+            <img src="./public/img/javascript.png" alt="JavaScript" />
+            <h3>JavaScript</h3>
+          </div>
+          <div>
+            <img src="./public/img/Woo-commerce.png" alt="Woo Commerce" />
+            <h3>Woo Commerce</h3>
+          </div>
+          <div>
+            <img src="./public/img/Optimizacion-SEO-1.png" alt="Optimizacion SEO" />
+            <h3>SEO</h3>
+          </div>
+          <div>
+            <img src="./public/img/Wordpress.png" alt="Wordpress" />
+            <h3>Wordpress</h3>
+          </div>
+          <div>
+            <img src="./public/img/node-js.png" alt="Node js" />
+            <h3>Node js</h3>
+          </div>
+          <div>
+            <img src="./public/img/python.png" alt="Python" />
+            <h3>Python</h3>
+          </div>
+          <div>
+            <img src="./public/img/react.png" alt="React" />
+            <h3>React</h3>
+          </div>           
+          
+        </div>
+      </div>
+
+      <div class="tools-part">
+        <h2><span>Dev Tool |</span> Herramientas</h2>
+        <div class="tools">
+          <div>
+            <img src="./public/img/github.png" alt="GITHUB" />
+            <h3>GitHub</h3>
+          </div>
+          <div>
+            <img src="./public/img/npm.png" alt="NPM" />
+            <h3>Npm</h3>
+          </div>
+          <div>
+            <img src="./public/img/visualestudio.png" alt="VISUAL STUDIO" />
+            <h3>Visual studio</h3>
+          </div>
+          <div>
+            <img src="./public/img/git.png" alt="GIT" />
+            <h3>Git</h3>
+          </div>
+          <div>
+            <img src="./public/img/analytics.png" alt="ANALYTICS" />
+            <h3>SEO y SEM </h3>
+          </div>
+          <div>
+            <img src="./public/img/google-console.png" alt="GOOGLE CONSOLE" />
+            <h3>Google Console</h3>
+          </div>
+          <div>
+            <img src="./public/img/Optimizacion-SEO-2.png" alt="OptimizaciÓn SEO" />
+            <h3>Optimizar seo</h3>
+          </div>
+          <div>
+            <img src="./public/img/postman.png" alt="Postman" />
+            <h3>Postman</h3>
+          </div>
+          <div>
+            <img src="./public/img/netlify-2.png" alt="Netlify" />
+            <h3>Netlify</h3>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+ 
+  <section class="about" id="about-me">
+    <div class="about-flex  container">
+
+      <div class="about-info container">
+        <div class="titulo-centrado">
+          <h3>Enfoque en la Resolución de Problemas</h3>
+        </div>
+        <br>
+        <div class="titulo-pre">
+          <h3><p>¿Cuál fue mi motivación principal para convertirte en desarrollador de software?</p></h3>
+        </div>
+        <div class="titulo-rta">
+          <h3><p>Rta: Me convertí en desarrollador de software por mi pasión en crear soluciones impactantes y resolver problemas a través de la magia de la programación.</p></h3>
+        </div>
+        <br>
+        <div class="titulo-pre">
+          <h3><p>¿Cómo me mantengo actualizado al tanto de las últimas tendencias y avances en tecnología y desarrollo de software?.</p></h3>
+        </div>
+        <div class="titulo-rta">
+          <h3><p>Rta: Me mantengo actualizado mediante lecturas frecuentes de blogs, participación en comunidades en línea y cursos en plataformas educativas.</p></h3>
+        </div>
+        <br>   
+        <div class="titulo-pre">
+          <h3><p>¿Cómo resuelvo los bugs o desafíos técnicos en mi trabajo como programador?.</p></h3>
+        </div>
+        <div class="titulo-rta">
+          <h3><p>Rta: Identifico el problema, reviso el código afectado, busco soluciones en la documentación y consulto a colegas si es necesario.</p></h3>
+        </div>
+       
+      </div>
+
+      
+             
+   
+
+      <div class="social">
+        <a href="#" target="_blank"><img src="./public/img/github.png" alt=""></a>
+        <a href="#" target="_blank"><img src="./public/img/linkedin_icon.png" alt=""></a>
+        <a href="#" target="_blank"><img src="./public/img/netlify-logo.png" alt=""></a>
+        <a data-modal-id="mensajes"><img src="./public/img/email1.png" alt=""></a>
+        <a href="./public/cv/Full stack - Alexander jerez fernandez.pdf" target="_blank" download="cv-alexander-jerez-f"><img src="./public/img/descargar-4.png" alt="Descargar-cv" /></a>
+
+      </div>
+
+    </div>
+    <div>
     
-        <div class="tools-part">
-          <h2><span>Dev Tool |</span> Herramientas</h2>
-          <div class="tools">
-            <div>
-              <img src="./public/img/github.png" alt="GITHUB" />
-              <h3>HTML</h3>
-            </div>
-            <div>
-              <img src="./public/img/npm.png" alt="NPM" />
-              <h3>CSS</h3>
-            </div>
-            <div>
-              <img src="./public/img/visualestudio.png" alt="VISUAL STUDIO" />
-              <h3>JavaScript</h3>
-            </div>
-            <div>
-              <img src="./public/img/git.png" alt="GIT" />
-              <h3>Woo Commerce</h3>
-            </div>
-            <div>
-              <img src="./public/img/analytics.png" alt="ANALYTICS" />
-              <h3>Optimizacion SEO</h3>
-            </div>
-            <div>
-              <img src="./public/img/google-console.png" alt="GOOGLE CONSOLE" />
-              <h3>Wordpress</h3>
+     
+    </div>
+
+      <!--email  de message -->
+      <form id="form">
+        <div class="field">
+          <label for="name">Nombre</label>
+          <input type="text" name="name" id="name" name="name" required>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="text" name="email" id="email" name="email" required>
+        </div>
+        <div class="field">
+          <label for="message">Mensaje</label>
+          <input type="text" name="message" id="message" name="message" required>
+        </div>
+            
+        <input type="submit" class="btn btn-success" id="button" value="Enviar" >
+      </form>
+      
+      <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+      
+      <script type="text/javascript">
+        emailjs.init('DjZrVm1UPGj-g9uay')
+      </script>
+      <br>
+      <br>
+      <div id="main-btn-container">
+          <a href="./public/cv/Full stack - Alexander jerez fernandez.pdf" class="btn btn-green"  target="_blank" download="cv-alexander-jerez-f">Descargar cv</a>    
+      </div>
+        
+      
+      <!--email  de message -->
+
+    <div class="icon-elemnts">
+      <div>
+        <a href="#" target="_blank"><img src="./public/img/yuotube.png" alt=""><span>/ver video del proyecto paso a paso
+            desde cero</span></a>
+
+      </div>
+      <div>
+        <a href="https://github.com/alexjfj20" target="_blank"><img src="./public/img/github.png" alt=""><span>/ver codigo de este proyecto desde
+            el repositorio</span></a>
+      </div>
+
+
+    </div>
+
+  </section>
+
+  <footer>
+    <div class="container"></div>
+    <div class="footer">
+      <p> @ 2023 Copyright | Designed by N/CODER </p>
+    </div>
+
+  </footer>
+
+
+  
+  
+
+  <div id="Galletadelafortuna" class="eins-modal container" data-options="openTransition: expandIn; openDuration: 200;">
+    <div class="eins-modal-content">
+      <div class="eins-modal-close"></div>
+      <div class="pw-content">
+        <div class="eins-modal-preview container"><img src="./public/img/Galletadelafortuna.png" alt="">
+        </div>
+        <div class="eins-modal-text container">
+          <p>La página web de Galleta de la Fortuna, diseñada con
+             React y CSS, brinda una experiencia interactiva y 
+             atractiva. Su interfaz moderna y fluida permite a 
+             los usuarios abrir virtualmente sus galletas de la
+             fortuna con solo un clic, revelando mensajes
+             inspiradores y divertidos. </p>
+
+          <div class="eins-modal-text-2">
+            <span>Enlace</span><a href="https://zippy-madeleine-2b0c2c.netlify.app/"
+              target="_blank">https://zippy-madeleine-2b0c2c.netlify.app/"</a>
+          </div>
+          <div class="eins-modal-text-3">
+            <span>Tecnología usadas:</span>
+            <div class="eins-modal-tec">
+              <img src="./public/img/react.png" alt="">
+              <img src="./public/img/CSS.png" alt="">
+              
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+
+  <div id="tienda" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
+    <div class="eins-modal-content">
+      <div class="eins-modal-close"></div>
+      <div class="pw-content">
+        <div class="eins-modal-preview"><img src="./public/img/tienda.png" alt="">
+        </div>
+        <div class="eins-modal-text container">
+          <p>Innovador e-commerce, desarrollado con JavaScript, HTML y CSS,
+             diseñado para ofrecerte una experiencia de compra única directamente
+             a través del sitio web . Con una interfaz visualmente atractiva 
+             y fácil de usar, este sitio te permite descubrir y adquirir 
+             productos de manera intuitiva mientras</p>
+
+          <div class="eins-modal-text-2">
+            <span>Enlace</span><a href="https://ecommercealexjf.netlify.app/"
+              target="_blank">https://zippy-madeleine-2b0c2c.netlify.app/"</a>
+          </div>
+          <div class="eins-modal-text-3">
+            <span>Tecnología usadas:</span>
+            <div class="eins-modal-tec">
+              <img src="./public/img/javascript.png" alt="">
+              <img src="./public/img/HTML5.png" alt="">
+              <img src="./public/img/CSS.png" alt="">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="pokemon" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
+    <div class="eins-modal-content">
+      <div class="eins-modal-close"></div>
+      <div class="pw-content">
+        <div class="eins-modal-preview"><img src="./public/img/pokemon.png" alt="">
+        </div>
+        <div class="eins-modal-text container">
+          <p>La increíble página web de Pokémon, una experiencia única desarrollada
+             con React, JavaScript, HTML y CSS! Sumérgete en el fascinante mundo de
+             Pokémon a través de una interfaz interactiva y visualmente impresionante
+             diseñada para fans de todas las edades.
+            <br>
+            <br>
+            Con la potencia de React, hemos creado una página dinámica que te permite 
+            explorar la vasta colección de Pokémon de manera fluida. Puedes buscar tus 
+            Pokémon favoritos, aprender sobre sus habilidades y características, y seguir
+            la evolución de tus criaturas preferidas con solo unos clics.</p>
+
+          <div class="eins-modal-text-2">
+            <span>Enlace</span><a href="https://effervescent-panda-9f3700.netlify.app/"
+              target="_blank">https://zippy-madeleine-2b0c2c.netlify.app/"</a>
+          </div>
+          <div class="eins-modal-text-3">
+            <span>Tecnología usadas:</span>
+            <div class="eins-modal-tec">
+              <img src="./public/img/react.png" alt="">
+              <img src="./public/img/javascript.png" alt="">
+              <img src="./public/img/HTML5.png" alt="">
+              <img src="./public/img/CSS.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="fondomusical" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
+    <div class="eins-modal-content">
+      <div class="eins-modal-close"></div>
+      <div class="pw-content">
+        <div class="eins-modal-preview"><img src="./public/img/fondo-musical-2.png" alt="">
+        </div>
+        <div class="eins-modal-text container">
+          <p>Descubre la revolucionaria aplicación de música, desarrollada con React, 
+            JavaScript, HTML y CSS, que redefine la forma en que experimentas la melodía 
+            y el ritmo. Sumérgete en un universo sonoro interactivo con una interfaz moderna
+            y amigable que hace que tu experiencia musical sea más emocionante que nunca.
+            <br>
+            <br>
+            Con la potencia de React, hemos creado una aplicación fluida que te permite explorar 
+            un vasto catálogo de canciones de manera intuitiva. Descubre nuevos géneros, artistas
+            y álbumes con facilidad, gracias a un diseño dinámico que se adapta a tus preferencias
+            musicales. La navegación suave te permite sumergirte en la música que amas sin esfuerzo.
+            <br>
+            <br>
+            El diseño atractivo, impulsado por HTML y CSS, garantiza una experiencia visualmente 
+            cautivadora. Explora las carátulas de los álbumes, las letras de las canciones y las 
+            recomendaciones personalizadas con una presentación elegante que se ajusta a cualquier
+            pantalla, desde tu teléfono móvil hasta tu computadora.</p>
+
+          <div class="eins-modal-text-2">
+            <span>Enlace</span><a href="https://visionary-palmier-91e2f8.netlify.app/#/auth/login"
+              target="_blank">https://zippy-madeleine-2b0c2c.netlify.app/"</a>
+          </div>
+          <div class="eins-modal-text-3">
+            <span>Tecnología usadas:</span>
+            <div class="eins-modal-tec">
+              <img src="./public/img/react.png" alt="">
+              <img src="./public/img/javascript.png" alt="">
+              <img src="./public/img/HTML5.png" alt="">
+              <img src="./public/img/CSS.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="RickandMortyapp" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
+    <div class="eins-modal-content">
+      <div class="eins-modal-close"></div>
+      <div class="pw-content">
+        <div class="eins-modal-preview"><img src="./public/img/RickandMortyapp.png" alt="">
+        </div>
+        <div class="eins-modal-text container">
+          <p>¡Prepárate para sumergirte en el multiverso con la increíble App de Rick and Morty,
+             desarrollada con React, JavaScript, HTML y CSS! Esta aplicación te lleva a un viaje 
+             interdimensional lleno de humor, aventura y personajes peculiares directamente desde
+             el universo de Rick Sanchez y su nieto Morty.
+             <br>
+             <br>
+             Con la potencia de React, hemos creado una aplicación dinámica que captura la esencia
+             caótica y divertida de la serie. Explora un vasto catálogo de episodios, personajes y
+             momentos épicos con una interfaz intuitiva que te sumerge en el fascinante mundo de
+             Rick and Morty.</p>
+
+          <div class="eins-modal-text-2">
+            <span>Enlace</span><a href="https://sensational-unicorn-5aab0e.netlify.app/"
+              target="_blank">https://zippy-madeleine-2b0c2c.netlify.app/"</a>
+          </div>
+          <div class="eins-modal-text-3">
+            <span>Tecnología usadas:</span>
+            <div class="eins-modal-tec">
+              <img src="./public/img/react.png" alt="">
+              <img src="./public/img/javascript.png" alt="">
+              <img src="./public/img/HTML5.png" alt="">
+              <img src="./public/img/CSS.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="appclima" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
+    <div class="eins-modal-content">
+      <div class="eins-modal-close"></div>
+      <div class="pw-content">
+        <div class="eins-modal-preview"><img src="./public/img/appclima.png" alt="">
+        </div>
+        <div class="eins-modal-text container">
+          <p>¡Prepárate para estar siempre un paso adelante con nuestra innovadora App del Clima,
+             desarrollada con React, JavaScript, HTML y CSS! Esta aplicación te brinda una experiencia
+             completa y visualmente atractiva para mantenerte informado sobre las condiciones climáticas
+             en tiempo real, ya sea que estés planeando tu día o preparándote para una aventura.
+             <br>
+             <br>
+             Gracias a la potencia de React, hemos creado una aplicación dinámica que ofrece datos precisos
+             de pronósticos climáticos. Navega de manera fluida entre ubicaciones, descubre detalles detallados
+             y sigue los cambios climáticos con una interfaz intuitiva que se adapta a tus necesidades.</p>
+
+          <div class="eins-modal-text-2">
+            <span>Enlace</span><a href="https://gleaming-meerkat-9d0b10.netlify.app/"
+              target="_blank">https://zippy-madeleine-2b0c2c.netlify.app/"</a>
+          </div>
+          <div class="eins-modal-text-3">
+            <span>Tecnología usadas:</span>
+            <div class="eins-modal-tec">
+              <img src="./public/img/react.png" alt="">
+              <img src="./public/img/javascript.png" alt="">
+              <img src="./public/img/HTML5.png" alt="">
+              <img src="./public/img/CSS.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <!-- Modal section de message -->
+  <div id="mensajes" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
+    <div class="eins-modal-content">
+         <div class="eins-modal-close"></div>
+         <form id="form">
+          <div class="field">
+            <label for="name">Nombre</label>
+            <input type="text" name="name" id="name" name="name">
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" name="email" required>
+          </div>
+          <div class="field">
+            <label for="message">Mensaje</label>
+            <input type="text" name="message" id="message" name="message" required>
+          </div>
+            <input type="submit" class="btn btn-success" id="button" value="Enviar" >
+     
+            
+        </form>
+      
+        
+        <script type="text/javascript"
+          src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        
+        <script type="text/javascript">
+          emailjs.init('DjZrVm1UPGj-g9uay')
+        </script>
+     </div>
+</div>
+
+</body>
+
+  <!-- Modal section  de message -->
+
+
+    <script src="src/toggle.js"></script>
+
+
+    <script src="/node_modules/eins-modal/dist/js/eins-modal.min.js"></script>
+
+  
+   <script>
+          const btn = document.getElementById('button');
+
+          document.getElementById('form')
+          .addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            btn.value = 'Enviado...';
+
+            const serviceID = 'default_service';
+            const templateID = 'template_nn1fqju';
+
+            emailjs.sendForm(serviceID, templateID, this)
+              .then(() => {
+                btn.value = 'Enviar';
+                alert('Mensaje enviado correctamente!');
+              }, (err) => {
+                btn.value = 'Enviar';
+                alert(JSON.stringify(err));
+              });
+          });
+
+   </script>
     
-  </body>
+    
+
 </html>
