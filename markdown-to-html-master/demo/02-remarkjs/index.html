@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>RemarkJS layout</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <!-- source : index.md-->
+    <textarea id="source">
+    # RemarkJS layout
+
+---
+
+# Slide 1
+
+This is the first slide
+
+---
+
+
+# Slide 2
+
+This is the second slide.
+
+Details in [another](another.html) slideshow.
+
+---
+
+
+# Slide 3
+
+See [https://remarkjs.com](https://remarkjs.com) for more features.
+
+
+    </textarea>
+
+    <script src="assets/remarkjs/remark-latest.min.js"></script>
+    <script>
+        var slideshow = remark.create();
+    </script>
+</body>
+</html>

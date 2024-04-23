@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+  <title>Tables</title>
+
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/4.0.0/github-markdown.min.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/github.min.css">
+  <style>
+    html,
+    body {
+      width: 95%;
+      margin: auto;
+      padding-bottom: 50px;
+    }
+    @media print {
+      .pagebreak { page-break-before: always; }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- source : features/tables.md-->
+  <article class="markdown-body">
+    <h1 id="tables">Tables</h1><p>Note that you can generate markdown tables with <a href="https://www.tablesgenerator.com/markdown_tables" target="_blank">www.tablesgenerator.com</a></p>
+<h2 id="basic-table">Basic table</h2><table>
+<thead>
+<tr>
+<th>Syntax</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Header</td>
+<td>Title</td>
+</tr>
+<tr>
+<td>Paragraph</td>
+<td>Text</td>
+</tr>
+</tbody></table>
+<h2 id="table-with-alignment">Table with alignment</h2><table>
+<thead>
+<tr>
+<th align="left">Syntax</th>
+<th align="center">Description</th>
+<th align="right">Test Text</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">Header</td>
+<td align="center">Title</td>
+<td align="right">Here&#39;s this</td>
+</tr>
+<tr>
+<td align="left">Paragraph</td>
+<td align="center">Text</td>
+<td align="right">And more</td>
+</tr>
+</tbody></table>
+<p><a href="../">Back to home...</a></p>
+
+  </article>
+
+  <!-- hightlight.pack.js -->
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  <!-- https://www.mathjax.org -->
+  <script>
+    MathJax = {
+      loader: {
+        load: ['input/tex', 'output/svg', 'ui/menu', '[tex]/require']
+      },
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    };
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/startup.js"
+    integrity="sha512-LZZ88buOWCaSouKg9UNiW3N/vhBCprp0tpG9uNp+r6maXLDeBddAaqTmDduadI+WghoGaNlZG4NgCX0Xsxlfxg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.11.5/mermaid.min.js"></script>
+  <script>mermaid.init({
+      startOnLoad: true,
+      flowchart: {
+        useMaxWidth: true
+      }
+    }, ".language-mermaid");</script>
+</body>
+
+</html>
