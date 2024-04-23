@@ -412,7 +412,7 @@ section.skills {
 }
 
 .icon-elemnts span:hover {
-  color:  var(--segundary);
+  color:  var(--secundary-light);
 }
 
 /*modal*/
@@ -856,7 +856,7 @@ input[type="submit"] {
 
 /* O si deseas aplicar la opacidad solo en hover */
 .btn-green:hover {
-  color: white;
+  color: #ABB2B9;
   background-color: var(--primary);
   opacity: 1;
 }
